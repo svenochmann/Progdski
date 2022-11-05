@@ -1,1 +1,1 @@
-# ProgDSKI-uebung
+# ProgDSKI-Übungen
