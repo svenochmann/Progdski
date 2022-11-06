@@ -5,7 +5,7 @@ def caesar_encode(text, shift, alphabet="abcdefghijklmnopqrstuvwxyz"):
     encrypt_text =""
     
     for letter in text:
-            if letter in alphabet and " ":
+            if letter in alphabet:
                 position = alphabet.index(letter)
                 new_position = position + shift
                 if new_position >25:
