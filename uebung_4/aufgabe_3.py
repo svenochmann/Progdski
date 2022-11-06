@@ -22,5 +22,12 @@ def caesar_encode(text, shift, alphabet="abcdefghijklmnopqrstuvwxyz .,!?äöü")
             encrypt_text += new_letter_1
     return encrypt_text
 
+encrypted_text = "k j?xebmj.btxww,nbvjwbxqwnby xp jvvbtj!vbn j,nwc"
 
-    
+
+for i in range(32):
+    """
+        it runs 32 times and checks each shift, for 32 runs
+        to find the right shift
+    """
+    print(caesar_encode(encrypted_text, i))
