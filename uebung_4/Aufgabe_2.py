@@ -1,9 +1,5 @@
 
 
-
-
-
-
 def caesar_encode(text, shift, alphabet="abcdefghijklmnopqrstuvwxyz"):
     encrypt_text =""
     for letter in text:    
@@ -11,8 +7,9 @@ def caesar_encode(text, shift, alphabet="abcdefghijklmnopqrstuvwxyz"):
              """Es Checkt ob letter im alphabet ist"""
              position = alphabet.index(letter)
         else:
-            pass
-        new_position = position +shift
+            position = " "
+
+        new_position = position + shift
         if new_position >25:
             new_position_2 = new_position-26
             
@@ -24,5 +21,10 @@ def caesar_encode(text, shift, alphabet="abcdefghijklmnopqrstuvwxyz"):
             encrypt_text += new_letter_1
     return encrypt_text
 
+encrypted_text= "xri eztyk jtycvtyk wlvi uve rewrex."
 
-print(caesar_encode("xri eztyk jtycvtyk wlvi uve rewrex.",15))
+for i in range(25):
+    print(caesar_encode(encrypted_text, i))
+
+
+    
