@@ -4,13 +4,12 @@
 def caesar_encode(text, shift, alphabet="abcdefghijklmnopqrstuvwxyz .,!?äöü"):
     encrypt_text =""
     for letter in text:    
-        if letter in alphabet:
-             """Es Checkt ob letter im alphabet ist"""
-             position = alphabet.index(letter)
-        else:
-            position = " "
-
+        
+        position = alphabet.index(letter)
+        
+        
         new_position = position + shift
+
         if new_position >32:
             new_position_2 = new_position-33
             
