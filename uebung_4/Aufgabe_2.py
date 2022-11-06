@@ -24,6 +24,10 @@ def caesar_encode(text, shift, alphabet="abcdefghijklmnopqrstuvwxyz"):
 encrypted_text= "xri eztyk jtycvtyk wlvi uve rewrex."
 
 for i in range(25):
+    """
+        it runs 25 times and checks each shift, for 25 runs
+        to find the right shift
+    """
     print(caesar_encode(encrypted_text, i))
 
 
