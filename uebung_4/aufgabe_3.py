@@ -3,7 +3,6 @@
 
 def caesar_encode(text, shift, alphabet="abcdefghijklmnopqrstuvwxyz .,!?äöü"):
     encrypt_text =""
-    i = 0
     for letter in text:
             if letter in alphabet:
                 position = alphabet.index(letter)
@@ -39,5 +38,5 @@ for i in range(32):
 """
     Das ergebnis lauted:
     "bravo! das konnte man ohne programm kaum eraten."
-    
+
 """
