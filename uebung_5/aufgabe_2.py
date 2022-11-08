@@ -1,3 +1,5 @@
+""""Aufgabe 2""
+
 class Person:
     
     def __init__(self, name, age):
@@ -5,12 +7,12 @@ class Person:
         self.age = age
 
     def compare_age(person1, person2):
-        if person1 == person2:
-            print(f"{person2} is the same age.")
-        elif person1 >> person2:
-            print(f"{person2}is younger than me.")
+        if person1.age == person2.age:
+            print(f"{person2.name} is younger than me.")
+        elif person1.age > person2.age:
+            print(f"{person2.name} is the same age.")
         else:
-            print(f"{person2} is older than me.")
+            print(f"{person2.name} is older than me.")
 
 
 
@@ -29,3 +31,12 @@ person3.compare_age(person1)  # => "Sally is older than me."
 
 
 
+"""
+print(type(person1))
+        if person1 == person2:
+            print(f"{person2} is the same age.")
+        elif person1 > person2:
+            print(f"{person2}is younger than me.")
+        else:
+            print(f"{person2} is older than me.")
+"""
