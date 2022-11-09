@@ -7,9 +7,24 @@ class Circle:
         self.y = y
         self.radius = radius
 
-
-    
+    def center(x, y):
+        center = x
+        print(center)
         
+        def position(y):
+            position = y 
+            print(position)
+
+class center:
+
+        def __init__(self, x, y):
+            self.x = x
+            self.y = y
+            print(x)
+
+        def position(y):
+            position = y 
+            print(position)
 
 
 circle_1 = Circle(x=2, y=3.5, radius=5.5)
