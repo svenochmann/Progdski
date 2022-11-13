@@ -1,20 +1,28 @@
 """Aufgabe 3"""
-
+import math
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    def position(self):
+        print(self.x, self.y)
+    def center_distance(self):
+        return math.sqrt(self.x ** 2 + self.y ** 2)
    
 
 
 
-class Circle:
+class Circle(Point):
     def __init__(self, x, y, radius):
-        self.center = x
+        self.x = x
         self.y = y
         self.radius = radius
+        self.center = Point(self.x, self.y)
+        
+        
         
     
        
-class center(Circle):
-    def position():
-        print(Circle.center)
 
 circle_1 = Circle(x=2, y=3.5, radius=5.5)
 
