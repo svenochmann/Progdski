@@ -20,4 +20,7 @@ class Circle(Point):
 """Ausgabem Beispiel"""
 a=Circle(5, -3, 2.5)
 b=Circle(5, -3, 2.5)
-print(a==b)  # => Truea=Circle(5, -3, 2.5)b=Circle(5, -3, 25.0)print(a==b)  # => False
+print(a==b)  # => True
+a=Circle(5, -3, 2.5)
+b=Circle(5, -3, 25.0)
+print(a==b)  # => False
