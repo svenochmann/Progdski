@@ -33,9 +33,20 @@ class Person:
 
 
 """Beispiel Ausgabe"""
+"""
 p1=Person("Monica", "m.thomson@gmail.com", "SuperSecret")
 
 p1.get_mail("FirstGuess")  # => Password incorrect.
 p1.get_mail("SecondGuess")  # => Password incorrect.
 p1.get_mail("ThirdGuess")  # => Password incorrect.
 p1.get_mail("ThirdGuess")  # => Password incorrect.
+"""
+p1=Person("Monica", "m.thomson@gmail.com", "SuperSecret")
+
+p1.get_mail("FirstGuess")   # => Password incorrect.
+p1.get_mail("SecondGuess")  # => Password incorrect.
+p1.get_mail("SuperSecret")  # => m.thomson@gmail.com
+p1.get_mail("FirstGuess")   # => Password incorrect.
+p1.get_mail("SecondGuess")  # => Password incorrect.
+p1.get_mail("ThirdGuess")   # => Password incorrect.
+p1.get_mail("SuperSecret")  # => Too many failed attempts.
