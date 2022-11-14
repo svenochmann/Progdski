@@ -16,11 +16,17 @@ class Circle(Point):
         super().__init__(x, y)
         self.radius=radius
 
+    def __eq__(self, p):
+        return (self.x == p.x) and (self.y == p.y) and (self.radius == p.radius)
+
+
+        
 
 """Ausgabem Beispiel"""
 a=Circle(5, -3, 2.5)
 b=Circle(5, -3, 2.5)
 print(a==b)  # => True
+
 a=Circle(5, -3, 2.5)
 b=Circle(5, -3, 25.0)
 print(a==b)  # => False
